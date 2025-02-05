@@ -116,5 +116,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   Made with ❤️ by Abhiram
   <br>
-  © 2024 All Rights Reserved
+  © 2025 All Rights Reserved
 </div>
