@@ -1,182 +1,120 @@
-# 🚀 CloudStore - Next-Gen File Storage System
+# ABHIRAM_PHP_1270 🚀
 
-<div align="center">
-    <img src="https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=for-the-badge&logo=php&logoColor=white">
-    <img src="https://img.shields.io/badge/MySQL-8.0%2B-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-    <img src="https://img.shields.io/badge/TailwindCSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
-    <img src="https://img.shields.io/badge/Author-Abhiram-ff69b4?style=for-the-badge">
-</div>
+[![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://www.php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-orange.svg)](https://www.mysql.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Google OAuth](https://img.shields.io/badge/Google-OAuth%202.0-red.svg)](https://developers.google.com/identity/protocols/oauth2)
 
-## 📖 Overview
-
-CloudStore is a modern, secure file storage system built with PHP and MySQL, featuring a sleek user interface powered by TailwindCSS. It implements a robust key-value storage architecture for efficient file management and retrieval.
-
-## ✨ Features
-
-### 🔐 Secure File Storage
-- Unique key generation for each file
-- Encrypted file storage
-- Secure file access control
-
-### 📤 File Management
-- Drag & drop file uploads
-- Multi-file upload support
-- Image and video file support
-- File preview functionality
-
-### 🔍 Smart Organization
-- Automatic file categorization
-- Advanced search capabilities
-- Intuitive file browsing
-- Clean, modern dashboard
-
-### 💫 User Experience
-- Responsive design
-- Real-time upload progress
-- Instant file previews
-- Smooth animations
-
-## 🛠️ Technical Architecture
-
-### Key-Value Storage System
-```
-├── File Upload
-│   ├── Generate Unique Key
-│   ├── Store Physical File
-│   └── Create Database Entry
-│
-├── Database Schema
-│   ├── file_key (Primary Key)
-│   ├── file_name
-│   ├── file_type
-│   ├── file_size
-│   └── upload_date
-│
-└── File Retrieval
-    ├── Key-Based Access
-    ├── Type Filtering
-    └── Search Indexing
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-- PHP 8.0 or higher
-- MySQL 8.0 or higher
-- Apache/Nginx web server
-- Composer (for dependencies)
-
-### Installation
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/key-value-storage-system.git
-   cd key-value-storage-system
-   ```
-
-2. **Database Setup**
-   ```sql
-   CREATE DATABASE storage_db;
-   USE storage_db;
-   SOURCE database.sql;
-   ```
-
-3. **Configure Database Connection**
-   ```bash
-   # Edit config/database.php with your credentials
-   ```
-
-4. **Set Permissions**
-   ```bash
-   chmod 755 uploads/
-   ```
-
-5. **Start the Server**
-   ```bash
-   php -S localhost:8000
-   ```
-
-## 📁 Project Structure
-
-```
-key-value-storage-system/
-├── api/
-│   ├── upload.php
-│   ├── delete.php
-│   └── view.php
-├── config/
-│   └── database.php
-├── dashboard/
-│   └── index.php
-├── uploads/
-├── index.php
-└── README.md
-```
-
-## 💻 Usage
-
-### File Upload
-```php
-POST /api/upload.php
-Content-Type: multipart/form-data
-
-file: [binary]
-```
-
-### File Retrieval
-```php
-GET /api/view.php?key={file_key}
-```
-
-### File Deletion
-```php
-DELETE /api/delete.php?key={file_key}
-```
-
-## 🔒 Security Features
-
-- Unique key generation for each file
-- SQL injection prevention
-- XSS protection
-- File type validation
-- Size limit enforcement
-- Access control
-
-## 🎯 Performance Optimizations
-
-- Efficient key-value storage
-- Optimized database queries
-- Lazy loading of images
-- Caching mechanisms
-- Compressed file storage
-
-## 📱 Responsive Design
-
-The interface is fully responsive and works seamlessly across:
-- 💻 Desktop computers
-- 💪 Tablets
-- 📱 Mobile devices
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🌟 Acknowledgments
-
-- TailwindCSS for the amazing UI framework
-- LottieFiles for beautiful animations
-- Special thanks to all contributors
+A modern PHP web application featuring secure Google Authentication integration.
 
 ---
+
+## 📝 Project Description
+This project implements Google Authentication in a PHP web application. It allows users to securely sign in using their Google accounts, demonstrating modern authentication practices and secure user management.
+
+![Project Banner](https://developers.google.com/identity/images/btn_google_signin_dark_normal_web@2x.png)
+
+## ✨ Features
+- 🔐 Google OAuth 2.0 Authentication
+- 🔒 Secure user session management
+- 👤 User profile information display
+- 📱 Responsive web interface
+- 💾 Database integration for user data storage
+
+## 🛠️ Technologies Used
+| Technology | Version | Purpose |
+|------------|---------|----------|
+| PHP | 7.4+ | Backend Development |
+| MySQL | 8.0 | Database Management |
+| Google OAuth 2.0 | Latest | Authentication |
+| HTML5/CSS3 | Latest | Frontend Structure & Styling |
+| JavaScript | ES6+ | Frontend Functionality |
+| Bootstrap | 5.0 | Responsive Design |
+| Composer | 2.0+ | Dependency Management |
+
+## 📁 Project Structure
+```bash
+Authentication with Google/
+├── 📂 api/                    # PHP backend files and Google API integration
+├── 📄 database.sql           # Database schema and initial setup
+├── 📄 index.html            # Main application entry point
+├── 📄 script.js             # Frontend JavaScript functionality
+└── 📄 styles.css            # Custom styling
+```
+
+## 🚀 Setup Instructions
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/HASHCOVET-TRAINEE/ABHIRAM_PHP_1270.git
+```
+
+### 2️⃣ Install dependencies using Composer
+```bash
+cd ABHIRAM_PHP_1270/Authentication\ with\ Google/api
+composer install
+```
+
+### 3️⃣ Configure Database
+- 📥 Import the `database.sql` file into your MySQL server
+- ⚙️ Update database credentials in the configuration file
+
+### 4️⃣ Google API Setup
+1. 🔧 Create a project in Google Cloud Console
+2. ✅ Enable Google+ API
+3. 🔑 Create OAuth 2.0 credentials
+4. 🔗 Add authorized redirect URIs
+5. ⚙️ Update the client ID and client secret in the configuration
+
+### 5️⃣ Run the Application
+1. ⚙️ Configure your web server (Apache/Nginx) to serve the project
+2. 🌐 Access the application through your web browser
+
+## 🔒 Security Features
+| Feature | Description |
+|---------|-------------|
+| Session Handling | Secure session management with encryption |
+| OAuth 2.0 | Industry-standard authentication protocol |
+| SQL Protection | Prevention against SQL injection attacks |
+| XSS Security | Cross-site scripting protection |
+| CSRF Shield | Cross-site request forgery prevention |
+
+## ✅ Tasks Completed
+- [x] Google authentication completed
+- [x] Database integration
+- [x] Frontend implementation
+- [x] Security measures implementation
+
+## 📸 Screenshots
+<details>
+<summary>Click to view screenshots</summary>
+
+### Login Page
+[Add login page screenshot here]
+
+### Dashboard
+[Add dashboard screenshot here]
+
+### Profile Page
+[Add profile page screenshot here]
+</details>
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Here's how you can contribute:
+
+1. 🍴 Fork the Project
+2. 🔨 Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. 💾 Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. 📤 Push to the Branch (`git push origin feature/AmazingFeature`)
+5. 📩 Open a Pull Request
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
 <div align="center">
-    <p>Designed & Developed with ❤️ by <b>Abhiram</b></p>
-    <p>© 2025,All rights reserved.</p>
-</div> 
+  Made with ❤️ by Abhiram
+  <br>
+  © 2025 All Rights Reserved
+</div>
